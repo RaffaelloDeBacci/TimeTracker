@@ -6,6 +6,6 @@ export class Project {
 
 export class ProjectItem {
     id: number;
-    username: string;
-    token: string;
+    name: string;
+    
 }
