@@ -1,0 +1,28 @@
+<mat-toolbar color="primary" role="heading">
+  <span>
+    <mat-icon>timelapse</mat-icon>
+    T I M E T R A C K E R
+  </span>
+
+  <span class="fill-remaining-space"></span>
+
+  <button mat-icon-button [matMenuTriggerFor]="menu">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>
+      <mat-icon>account_circle</mat-icon>
+      <span>Account</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>data_usage</mat-icon>
+      <span>Stats</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>timelapse</mat-icon>
+      <span>Track me!</span>
+    </button>
+  </mat-menu>
+</mat-toolbar>
+
+<router-outlet></router-outlet> 
